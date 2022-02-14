@@ -1,6 +1,3 @@
-/* === FONTS === */
-@import url(./fonts.css);
-
 /* === ROOT === */
 :root {  
   /* >>> COLORS */
@@ -33,6 +30,39 @@
   --bottom-devider: rgba(255, 255, 255, 0.2);
 }
 
+/* === FONTS === */
+@font-face {
+  font-family: "IBM Plex Sans";
+  src: url('../fonts/IBMPlexSans-Regular.woff2') format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "IBM Plex Sans";
+  src: url('../fonts/IBMPlexSans-Medium.woff2') format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "IBM Plex Sans";
+  src: url('../fonts/IBMPlexSans-SemiBold.woff2') format("woff2");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "IBM Plex Sans";
+  src: url('../fonts/IBMPlexSans-Bold.woff2') format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
 /* === BASE === */
 html {
   box-sizing: border-box;
@@ -59,6 +89,11 @@ a {
 
 nav a {
   color: var(--color-dusty-gray);
+  transition: color var(--main-animation);
+}
+
+nav a:hover {
+  color: var(--color-white);
 }
 
 /* === UNI === */
@@ -109,6 +144,14 @@ nav a {
   text-align: center;
   color: var(--color-governor-bay);
   background-color: var(--color-link-water);
+  transition: 
+    color var(--main-animation),
+    background-color var(--main-animation);
+}
+
+.btn:hover {
+  color: var(--color-link-water);
+  background-color: var(--color-governor-bay);
 }
 
 .btn--white {
@@ -130,11 +173,21 @@ nav a {
   text-align: center;
   color: var(--color-white);
   background-color: var(--color-governor-bay);
+  transition: 
+    border-color var(--main-animation),
+    color var(--main-animation),
+    background-color var(--main-animation);
 }
 
 .btn-header--stroke {
   border-color: var(--color-white);
   background-color: transparent;
+}
+
+.btn-header:hover {
+  border-color: var(--color-link-water);
+  color: var(--color-governor-bay);
+  background-color: var(--color-link-water);
 }
 
 /* === TITLE === */
@@ -250,6 +303,11 @@ nav a {
 .custom-checkbox__text a {
   color: inherit;
   text-decoration: underline;
+  transition: color var(--main-animation);
+}
+
+.custom-checkbox__text a:hover {
+  color: var(--color-governor-bay);
 }
 
 /* === CUSTOM-RADIO === */
@@ -382,10 +440,15 @@ nav a {
 /* === APPS === */
 .apps__item {
   display: inline-block;
+  transition: transform var(--main-animation);
 }
 
 .apps__item:not(:last-child) {
   margin-right: 28px;
+}
+
+.apps__item:hover {
+  transform: scale(1.1);
 }
 
 .apps__image {
@@ -490,6 +553,11 @@ nav a {
   display: flex;
   justify-content: space-between;
   margin-bottom: var(--main-indent);
+  transition: transform var(--main-animation);
+}
+
+.blog-general:hover {
+  transform: scale(1.03);
 }
 
 .blog-general__image {
@@ -568,6 +636,11 @@ nav a {
 
 .blog-list__item {
   background-color: var(--color-white);
+  transition: transform var(--main-animation);
+}
+
+.blog-list__item:hover {
+  transform: scale(1.03);
 }
 
 .blog-list__image {
@@ -640,10 +713,14 @@ nav a {
   display: flex;
   align-items: center;
   gap: 6px;
-  margin-bottom: 7px;
+  padding-bottom: 7px;
   font-weight: 600;
   font-size: 20px;
   line-height: 24px;
+}
+
+.location__item-city span {
+  transition: color var(--main-animation);
 }
 
 .location__item-city svg {
@@ -651,11 +728,20 @@ nav a {
   height: 20px;
   fill: currentColor;
   object-fit: cover;
+  transition: fill var(--main-animation);
 }
 
 .location__item-address {
   font-style: normal;
   line-height: 22px;
+}
+
+.location__item-link:hover .location__item-city svg {
+  fill: var(--color-governor-bay);
+}
+
+.location__item-link:hover .location__item-city span {
+  color: var(--color-black);
 }
 
 /* === CONTACTS === */
@@ -743,14 +829,14 @@ nav a {
   bottom: 16px;
   display: flex;
   align-items: center;
+  gap: 12px;
   border-radius: var(--secondary-radius);
   padding: 8px 16px;
   opacity: 0;
   visibility: hidden;
-}
-
-.contacts-social__item:not(:last-child) {
-  margin-right: 12px;
+  transition: 
+    opacity var(--main-animation),
+    visibility var(--main-animation);
 }
 
 .contacts-social__link {
@@ -764,6 +850,11 @@ nav a {
   height: 100%;
   fill: var(--color-white);
   object-fit: cover;
+  transition: transform var(--main-animation);
+}
+
+.contacts-social__link:hover svg {
+  transform: scale(1.2);
 }
 
 .contacts-list__image:hover .contacts-social {
@@ -852,6 +943,7 @@ nav a {
   height: 2px;
   background-color: var(--color-scarpa-flow);
   transform: translate(-50%, -50%) rotate(90deg);
+  transition: background-color var(--main-animation);
 }
 
 .accordion__title {
@@ -978,6 +1070,7 @@ nav a {
   border-radius: 100%;
   padding: 11px;
   background-color: #515165;
+  transition: transform var(--main-animation);
 }
 
 .footer-follow__link svg {
@@ -987,8 +1080,16 @@ nav a {
   object-fit: cover;
 }
 
+.footer-follow__link:hover {
+  transform: scale(1.2);
+}
+
 .footer-top__1 .footer-column:nth-child(2) {
   margin-left: 135px;
+}
+
+.footer-top__1 .footer-column:nth-child(2) .footer-column__title {
+  margin-bottom: 23px;
 }
 
 .footer-list {
@@ -1063,6 +1164,7 @@ nav a {
   display: block;
   width: 20px;
   height: 20px;
+  transition: transform var(--main-animation);
 }
 
 .footer-write__link svg {
@@ -1071,6 +1173,11 @@ nav a {
   fill: var(--color-governor-bay);
   object-fit: cover;
 }
+
+.footer-write__link:hover {
+  transform: scale(1.2);
+}
+
 
 .footer-contacts {
   display: flex;
@@ -1088,6 +1195,11 @@ nav a {
   background-size: 20px 20px;
   background-position: left center;
   background-repeat: no-repeat;
+  transition: color var(--main-animation);
+}
+
+.footer-contacts__link:hover {
+  color: var(--color-white);
 }
 
 .footer-contacts__link--mail {
@@ -1123,3 +1235,5 @@ nav a {
 .footer__copyright b {
   color: var(--color-white);
 }
+
+/* === MEDIA === */
