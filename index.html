@@ -16,7 +16,7 @@
         <img src="img/logo.svg" class="logo__image" alt="Crypto Logo">
       </a>
       <nav class="header__nav">
-        <button class="btn-reset btn-menu">
+        <button class="btn-menu">
           <span></span>
           <span></span>
           <span></span>
@@ -34,15 +34,18 @@
         </ul>
       </nav>
       <div class="header__btns">
-        <button class="btn-reset btn-header btn-header--stroke">Log In</button>
-        <button class="btn-reset btn-header">Sign Up</button>
+        <button class="btn-header btn-header--stroke">Log In</button>
+        <button class="btn-header">Sign Up</button>
       </div>
     </div>
   </header>
   <main>
     <!-- === HERO === -->
     <section class="hero">
-      <img src="./img/hero/hero-bg-1.png" class="hero-bg" alt="Hero cover">
+      <picture class="hero-bg">
+        <source srcset="./img/hero/hero-bg-2.png" media="(max-width: 768px)">
+        <img src="./img/hero/hero-bg-1.png" srcset="" alt="Hero cover">
+      </picture>
       <div class="hero__container container">
         <div class="hero__content">
           <h1 class="hero__title title">All operations <br> in a Single Wallet</h1>
@@ -217,7 +220,7 @@
             <div class="coins__others">And many others</div>
           </li>
         </ul>
-        <a href="#" class="coins__btn btn-reset btn">See all</a>
+        <a href="#" class="coins__btn btn">See all</a>
       </div>
     </section>
     <!-- === BLOG === -->
@@ -225,7 +228,7 @@
       <div class="blog__container container">
         <div class="blog__header">
           <h2 class="blog__header-title title title--2">Blog</h2>
-          <a href="#" class="btn-reset btn">See all news</a>
+          <a href="#" class="btn">See all news</a>
         </div>
         <ul class="blog-list list-reset">
           <li class="blog-list__item">
@@ -329,7 +332,7 @@
             </a>
           </li>
         </ul>
-        <a href="#" class="blog__btn btn-reset btn">See all news</a>
+        <a href="#" class="blog__btn btn">See all news</a>
       </div>
     </section>
     <!-- === LOCATION === -->
@@ -484,7 +487,7 @@
                 By clicking on the button, you consent to the processing <a href="#">of data processing</a> and compiled with <a href="#">confidentiality documents</a>
               </span>
             </label>
-            <button class="contacts__form-btn btn-reset btn" type="submit">Send message</button>
+            <button class="contacts__form-btn btn" type="submit">Send message</button>
           </form>
         </div>
       </div>
@@ -561,7 +564,7 @@
               Phasellus nam lacinia rhoncus id eget purus nulla er ultrices. Sapien dignissim dui, dignissim convalli nam lacinia er purus.
             </p>
           </div>
-          <a href="#" class="btn-reset btn btn--white">Buy cryptocurrency</a>
+          <a href="#" class="btn btn--white">Buy cryptocurrency</a>
         </div>
       </div>
     </section>
