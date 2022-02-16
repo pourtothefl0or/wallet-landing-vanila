@@ -12,11 +12,11 @@
   <!-- === HEADER === -->
   <header class="header">
     <div class="header__container container">
-      <a href="#" class="logo">
+      <a href="#" class="header__logo logo">
         <img src="img/logo.svg" class="logo__image" alt="Crypto Logo">
       </a>
       <nav class="header__nav">
-        <button class="btn-menu">
+        <button class="btn-burger">
           <span></span>
           <span></span>
           <span></span>
@@ -31,6 +31,9 @@
           <li class="header-list__item">
             <a href="#" class="header-list__link">FAQ</a>
           </li>
+          <li class="header-list__item">
+            <a href="#" class="header-list__link">Security</a>
+          </li>
         </ul>
       </nav>
       <div class="header__btns">
@@ -43,10 +46,8 @@
     <!-- === HERO === -->
     <section class="hero">
       <picture class="hero-bg">
-        <!-- 2 -->
         <source srcset="./img/hero/hero-bg-2.webp, ./img/hero/2x/hero-bg-2-2x.webp 2x" type="type/webp" media="(max-width: 768px)">
         <source srcset="./img/hero/hero-bg-2.png, ./img/hero/2x/hero-bg-2-2x.png 2x" media="(max-width: 768px)">
-        <!-- 1 -->
         <source srcset="./img/hero/hero-bg-1.webp, ./img/hero/2x/hero-bg-1-2x.webp 2x" type="type/webp">
         <img src="./img/hero/hero-bg-1.png" srcset="./img/hero/2x/hero-bg-1-2x.png 2x" alt="Hero cover">
       </picture>
@@ -221,7 +222,7 @@
             </a>
           </li>
           <li class="coins__item">
-            <div class="coins__others">And many others</div>
+            <a href="#" class="coins__others">And many others</a>
           </li>
         </ul>
         <a href="#" class="coins__btn btn">See all</a>
@@ -367,7 +368,7 @@
     <section class="location">
       <picture>
         <source srcset="./img/location/location-bg.webp, ./img/location/2x/location-bg-2x.webp 2x" type="type/webp">
-        <img src="./img/location/location-bg.png" srcset="./img/location/2x/location-bg-2x.png 2x" class="location-bg" alt="Location map">  
+        <img src="./img/location/location-bg.png" srcset="./img/location/2x/location-bg-2x.png 2x" class="location-bg" alt="Location map">
       </picture>
       <div class="location__container container">
         <h2 class="location__title title title--2">Where are we?</h2>
@@ -417,6 +418,10 @@
     <!-- === CONTACTS === -->
     <section class="contacts">
       <div class="contacts__container container">
+        <h2 class="contacts__title title title--2">Contact us</h2>
+        <p class="contacts__descr descr">
+          Use this form to reach out to us
+        </p>
         <ul class="contacts-list list-reset">
           <li class="contacts-list__item">
             <div class="contacts-list__image contacts-list__item-inner">
@@ -475,59 +480,53 @@
             </div>
           </li>
         </ul>
-        <div class="contacts__content">
-          <h2 class="contacts__title title title--2">Contact us</h2>
-          <p class="contacts__descr descr">
-            Use this form to reach out to us
-          </p>
-          <form action="#" class="contacts__form">
-            <label class="form-field">
-              <span class="form-field__caption">Email</span>
-              <input class="form-field__input" type="email" name="email" placeholder="nick@example.com" required>
-            </label>
-            <label class="form-field">
-              <span class="form-field__caption">Phone</span>
-              <input type="tel" class="form-field__input" name="telephone" placeholder="+44 (000) 000-0000" required>
-            </label>
-            <label class="form-field contacts__form-country">
-              <span class="form-field__caption">Country</span>
-              <select class="form-field__input" required>
-                <option value="" disabled hidden>Choose a country</option>
-                <option value="usa">USA</option>
-                <option value="kazakhstan">Қазақстан</option>
-                <option value="turkiey">Türkiye</option>
-                <option value="united_kingdom" selected>United Kingdom</option>
-              </select>
-            </label>
-            <fieldset class="custom-fieldset contacts__form-gender">
-              <legend class="custom-fieldset__name">Gender</legend>
-              <div class="custom-fieldset__wrapper">
-                <label class="custom-radio">
-                  <input type="radio" name="form-radio" value="man" class="custom-radio__input visually-hidden" checked>
-                  <span class="custom-radio__item"></span>
-                  <span class="custom-radio__text">Man</span>
-                </label>
-                <label class="custom-radio">
-                  <input type="radio" name="form-radio" value="woman" class="custom-radio__input visually-hidden">
-                  <span class="custom-radio__item"></span>
-                  <span class="custom-radio__text">Woman</span>
-                </label>
-              </div>
-            </fieldset>
-            <label class="form-field">
-              <span class="form-field__caption">Message</span>
-              <textarea class="form-field__input form-field__input--big" placeholder="Enter your message here" required></textarea>
-            </label>
-            <label class="contacts__form-checkbox custom-checkbox">
-              <input type="checkbox" name="form-accept" class="custom-checkbox__input visually-hidden">
-              <span class="custom-checkbox__item"></span>
-              <span class="custom-checkbox__text">
-                By clicking on the button, you consent to the processing <a href="#">of data processing</a> and compiled with <a href="#">confidentiality documents</a>
-              </span>
-            </label>
-            <button class="contacts__form-btn btn" type="submit">Send message</button>
-          </form>
-        </div>
+        <form class="contacts-form" action="#" method="post">
+          <label class="form-field">
+            <span class="form-field__caption">Email</span>
+            <input class="form-field__input" type="email" name="email" placeholder="nick@example.com" required>
+          </label>
+          <label class="form-field">
+            <span class="form-field__caption">Phone</span>
+            <input type="tel" class="form-field__input" name="telephone" placeholder="+44 (000) 000-0000" required>
+          </label>
+          <label class="form-field contacts-form__country">
+            <span class="form-field__caption">Country</span>
+            <select class="form-field__input" required>
+              <option value="" disabled hidden>Choose a country</option>
+              <option value="usa">USA</option>
+              <option value="kazakhstan">Қазақстан</option>
+              <option value="turkiey">Türkiye</option>
+              <option value="united_kingdom" selected>United Kingdom</option>
+            </select>
+          </label>
+          <fieldset class="custom-fieldset contacts-form__gender">
+            <legend class="custom-fieldset__name">Gender</legend>
+            <div class="custom-fieldset__wrapper">
+              <label class="custom-radio">
+                <input type="radio" name="form-radio" value="man" class="custom-radio__input visually-hidden" checked>
+                <span class="custom-radio__item"></span>
+                <span class="custom-radio__text">Man</span>
+              </label>
+              <label class="custom-radio">
+                <input type="radio" name="form-radio" value="woman" class="custom-radio__input visually-hidden">
+                <span class="custom-radio__item"></span>
+                <span class="custom-radio__text">Woman</span>
+              </label>
+            </div>
+          </fieldset>
+          <label class="form-field">
+            <span class="form-field__caption">Message</span>
+            <textarea class="form-field__input form-field__input--big" placeholder="Enter your message here" required></textarea>
+          </label>
+          <label class="contacts-form__checkbox custom-checkbox">
+            <input type="checkbox" name="form-accept" class="custom-checkbox__input visually-hidden">
+            <span class="custom-checkbox__item"></span>
+            <span class="custom-checkbox__text">
+              By clicking on the button, you consent to the processing <a href="#">of data processing</a> and compiled with <a href="#">confidentiality documents</a>
+            </span>
+          </label>
+          <button class="contacts-form__btn btn" type="submit">Send message</button>
+        </form>
       </div>
     </section>
     <!-- === QUESTION === -->
@@ -650,16 +649,16 @@
             <a href="#" class="footer-list__link">Home</a>
           </li>
           <li class="footer-list__item">
-            <a href="#" class="footer-list__link">Blog</a>
+            <a href="#" class="footer-list__link">Wallets</a>
           </li>
           <li class="footer-list__item">
-            <a href="#" class="footer-list__link">FAQ</a>
+            <a href="#" class="footer-list__link">Merchants</a>
           </li>
           <li class="footer-list__item">
-            <a href="#" class="footer-list__link">Title</a>
+            <a href="#" class="footer-list__link">All transactions</a>
           </li>
           <li class="footer-list__item">
-            <a href="#" class="footer-list__link">Title</a>
+            <a href="#" class="footer-list__link">Contact Us</a>
           </li>
         </ul>
       </nav>

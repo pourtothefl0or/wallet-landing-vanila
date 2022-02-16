@@ -11,10 +11,10 @@ accordion.forEach((el) => {
 
 const body = document.querySelector('body');
 const burgerMenu = document.querySelector('.header-list');
-const burgerBtnMenu = document.querySelector('.btn-menu');
+const burgerBtn = document.querySelector('.btn-burger');
 
-burgerBtnMenu.addEventListener('click', () => {
+burgerBtn.addEventListener('click', () => {
     body.classList.toggle('scroll-disabled');
     burgerMenu.classList.toggle('header-list--active');
-    burgerBtnMenu.classList.toggle('btn-menu--active');
+    burgerBtn.classList.toggle('btn-burger--active');
 });
