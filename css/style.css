@@ -1144,7 +1144,7 @@ nav a:focus {
   border-radius: var(--secondary-radius);
   padding: 60px 60px 79px;
   background-color: var(--color-ebony-clay);
-  background-image: url("../img/ads/ads-bg.png");
+  background-image: -webkit-image-set(url("../img/ads/ads-bg.png") 1x, url("../img/ads/2x/ads-bg-2x.png") 2x);
   background-position: right 7px bottom -17px;
   background-size: 691px 362px;
   background-repeat: no-repeat;
@@ -1773,9 +1773,10 @@ nav a:focus {
   }
   
   .ads__content {
+    align-items: center;
     padding: 24px;
     background-size: 451px 234px;
-    background-position: bottom 100px center;
+    background-position: bottom 100px right -100px;
   }
 
   .ads__descr {
@@ -1784,6 +1785,5 @@ nav a:focus {
 
   .ads .btn--white {
     width: 289px;
-    align-self: center;
   }
 }
