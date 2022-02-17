@@ -681,6 +681,9 @@ nav a:focus {
   font-weight: 500;
   line-height: 21px;
   color: var(--color-scarpa-flow);
+  transition:
+    color var(--main-animation),
+    border-color var(--main-animation);
 }
 
 .coins__others:hover {
@@ -1180,7 +1183,7 @@ nav a:focus {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: var(--grid-gap);
+  gap: 35px;
   padding-top: 80px;
   padding-bottom: 13px;
 }
@@ -1227,7 +1230,6 @@ nav a:focus {
 .footer-list {
   display: flex;
   align-items: center;
-  justify-content: center;
   flex-wrap: wrap;
 }
 
@@ -1416,6 +1418,10 @@ nav a:focus {
   .footer-top .footer-column {
     margin: 0;
     text-align: center;
+  }
+
+  .footer-list {
+    justify-content: center;
   }
 
   .footer-column--lang {
