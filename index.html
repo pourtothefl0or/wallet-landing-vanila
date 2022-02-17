@@ -12,7 +12,7 @@
   <!-- === HEADER === -->
   <header class="header">
     <div class="header__container container">
-      <a href="#" class="header__logo logo">
+      <a href="#" class="logo">
         <img src="img/logo.svg" class="logo__image" alt="Crypto Logo">
       </a>
       <nav class="header__nav">
@@ -21,7 +21,7 @@
           <span></span>
           <span></span>
         </button>
-        <ul class="header-list list-reset">
+        <ul class="header-list">
           <li class="header-list__item">
             <a href="#" class="header-list__link">Home</a>
           </li>
@@ -37,8 +37,8 @@
         </ul>
       </nav>
       <div class="header__btns">
-        <button class="btn-header btn-header--stroke">Log In</button>
-        <button class="btn-header">Sign Up</button>
+        <button class="btn btn--stroke">Log In</button>
+        <button class="btn">Sign Up</button>
       </div>
     </div>
   </header>
@@ -46,25 +46,25 @@
     <!-- === HERO === -->
     <section class="hero">
       <picture class="hero-bg">
-        <source srcset="./img/hero/hero-bg-2.webp, ./img/hero/2x/hero-bg-2-2x.webp 2x" type="type/webp" media="(max-width: 768px)">
-        <source srcset="./img/hero/hero-bg-2.png, ./img/hero/2x/hero-bg-2-2x.png 2x" media="(max-width: 768px)">
-        <source srcset="./img/hero/hero-bg-1.webp, ./img/hero/2x/hero-bg-1-2x.webp 2x" type="type/webp">
-        <img src="./img/hero/hero-bg-1.png" srcset="./img/hero/2x/hero-bg-1-2x.png 2x" alt="Hero cover">
+        <source srcset="./img/hero/hero-bg-2.webp, ./img/hero/2x/hero-bg-2@2x.webp 2x" type="image/webp" media="(max-width: 768px)">
+        <source srcset="./img/hero/hero-bg-2.png, ./img/hero/2x/hero-bg-2@2x.png 2x" media="(max-width: 768px)">
+        <source srcset="./img/hero/hero-bg-1.webp, ./img/hero/2x/hero-bg-1@2x.webp 2x" type="image/webp">
+        <img src="./img/hero/hero-bg-1.png" srcset="./img/hero/2x/hero-bg-1@2x.png 2x" alt="Hero cover">
       </picture>
       <div class="hero__container container">
         <div class="hero__content">
-          <h1 class="hero__title title">All operations <br> in a Single Wallet</h1>
+          <h1 class="hero__title title title--xl">All operations <br> in a Single Wallet</h1>
           <p class="hero__descr descr">
             The PayPay Wallet is a safe place for the trader’s portfolio:<br> store your crypto & fiat funds to track profits and other activities.
           </p>
-          <ul class="hero__apps apps list-reset">
+          <ul class="hero__apps apps">
             <li class="apps__item">
               <a href="#" class="apps__image">
                 <img src="./img/icons/googleplay.svg" alt="Google Play">
               </a>
               <div class="apps-rate">
-                <span class="apps-rate__value">4.6</span>
-                <span class="apps-rate__reviews">78 reviews</span>
+                <p class="apps-rate__value">4.6</p>
+                <p class="apps-rate__reviews">78 reviews</p>
               </div>
             </li>
             <li class="apps__item">
@@ -72,8 +72,8 @@
                 <img src="./img/icons/appstore.svg" alt="App Store">
               </a>
               <div class="apps-rate">
-                <span class="apps-rate__value">4.6</span>
-                <span class="apps-rate__reviews">80 reviews</span>
+                <p class="apps-rate__value">4.6</p>
+                <p class="apps-rate__reviews">80 reviews</p>
               </div>
             </li>
           </ul>
@@ -83,170 +83,172 @@
     <!-- === COINS === -->
     <section class="coins">
       <div class="coins__container container">
-        <h2 class="coins__title title title--2">Cryptocurrencies that we operate</h2>
+        <h2 class="coins__title title">Cryptocurrencies that we operate</h2>
         <p class="coins__descr descr">
           Our team is increasing the number of cryptocurrency pairs on-a-regular-basis. Discover cryptocurrencies that we currently support, as well as which new cryptocurrencies will appear in our exchange module and trading terminal in the near future.
         </p>
-        <ul class="coins__list list-reset">
+        <ul class="coins__list">
           <li class="coins__item">
             <a href="#" class="coins__link">
               <img src="./img/coins/btc.svg" class="coins__link-image" alt="Bitcoin icon">
-              <span class="coins__link-abbr">BTC</span>
-              <span class="coins__link-name">Bitcoin</span>
+              <p class="coins__link-abbr">BTC</p>
+              <p class="coins__link-name">Bitcoin</p>
             </a>
           </li>
           <li class="coins__item">
             <a href="#" class="coins__link">
               <img src="./img/coins/ftm.svg" class="coins__link-image" alt="Fantom icon">
-              <span class="coins__link-abbr">FTM</span>
-              <span class="coins__link-name">Fantom</span>
+              <p class="coins__link-abbr">FTM</p>
+              <p class="coins__link-name">Fantom</p>
             </a>
           </li>
           <li class="coins__item">
             <a href="#" class="coins__link">
               <img src="./img/coins/rep.svg" class="coins__link-image" alt="Augur icon">
-              <span class="coins__link-abbr">REP</span>
-              <span class="coins__link-name">Augur</span>
+              <p class="coins__link-abbr">REP</p>
+              <p class="coins__link-name">Augur</p>
             </a>
           </li>
           <li class="coins__item">
             <a href="#" class="coins__link">
               <img src="./img/coins/gin.svg" class="coins__link-image" alt="GINcoin icon">
-              <span class="coins__link-abbr">GIN</span>
-              <span class="coins__link-name">GINcoin</span>
+              <p class="coins__link-abbr">GIN</p>
+              <p class="coins__link-name">GINcoin</p>
             </a>
           </li>
           <li class="coins__item">
             <a href="#" class="coins__link">
               <img src="./img/coins/eth.svg" class="coins__link-image" alt="Ethereum icon">
-              <span class="coins__link-abbr">ETH</span>
-              <span class="coins__link-name">Ethereum</span>
+              <p class="coins__link-abbr">ETH</p>
+              <p class="coins__link-name">Ethereum</p>
             </a>
           </li>
           <li class="coins__item">
             <a href="#" class="coins__link">
               <img src="./img/coins/comp.svg" class="coins__link-image" alt="Compound icon">
-              <span class="coins__link-abbr">COMP</span>
-              <span class="coins__link-name">Compound</span>
+              <p class="coins__link-abbr">COMP</p>
+              <p class="coins__link-name">Compound</p>
             </a>
           </li>
           <li class="coins__item">
             <a href="#" class="coins__link">
               <img src="./img/coins/ltc.svg" class="coins__link-image" alt="Litecoin icon">
-              <span class="coins__link-abbr">LTC</span>
-              <span class="coins__link-name">Litecoin</span>
+              <p class="coins__link-abbr">LTC</p>
+              <p class="coins__link-name">Litecoin</p>
             </a>
           </li>
           <li class="coins__item">
             <a href="#" class="coins__link">
               <img src="./img/coins/ngc.svg" class="coins__link-image" alt="NAGA icon">
-              <span class="coins__link-abbr">NGC</span>
-              <span class="coins__link-name">NAGA</span>
+              <p class="coins__link-abbr">NGC</p>
+              <p class="coins__link-name">NAGA</p>
             </a>
           </li>
           <li class="coins__item">
             <a href="#" class="coins__link">
               <img src="./img/coins/usdt.svg" class="coins__link-image" alt="Tether icon">
-              <span class="coins__link-abbr">USDT</span>
-              <span class="coins__link-name">Tether</span>
+              <p class="coins__link-abbr">USDT</p>
+              <p class="coins__link-name">Tether</p>
             </a>
           </li>
           <li class="coins__item">
             <a href="#" class="coins__link">
               <img src="./img/coins/snt.svg" class="coins__link-image" alt="Status icon">
-              <span class="coins__link-abbr">SNT</span>
-              <span class="coins__link-name">Status</span>
+              <p class="coins__link-abbr">SNT</p>
+              <p class="coins__link-name">Status</p>
             </a>
           </li>
           <li class="coins__item">
             <a href="#" class="coins__link">
               <img src="./img/coins/trx.svg" class="coins__link-image" alt="TRON icon">
-              <span class="coins__link-abbr">TRX</span>
-              <span class="coins__link-name">TRON</span>
+              <p class="coins__link-abbr">TRX</p>
+              <p class="coins__link-name">TRON</p>
             </a>
           </li>
           <li class="coins__item">
             <a href="#" class="coins__link">
               <img src="./img/coins/emc.svg" class="coins__link-image" alt="">
-              <span class="coins__link-abbr">EMC</span>
-              <span class="coins__link-name">Emercoin</span>
+              <p class="coins__link-abbr">EMC</p>
+              <p class="coins__link-name">Emercoin</p>
             </a>
           </li>
           <li class="coins__item">
             <a href="#" class="coins__link">
               <img src="./img/coins/xlm.svg" class="coins__link-image" alt="Stellar icon">
-              <span class="coins__link-abbr">XLM</span>
-              <span class="coins__link-name">Stellar</span>
+              <p class="coins__link-abbr">XLM</p>
+              <p class="coins__link-name">Stellar</p>
             </a>
           </li>
           <li class="coins__item">
             <a href="#" class="coins__link">
               <img src="./img/coins/bnt.svg" class="coins__link-image" alt="Bancor icon">
-              <span class="coins__link-abbr">BNT</span>
-              <span class="coins__link-name">Bancor</span>
+              <p class="coins__link-abbr">BNT</p>
+              <p class="coins__link-name">Bancor</p>
             </a>
           </li>
           <li class="coins__item">
             <a href="#" class="coins__link">
               <img src="./img/coins/mana.svg" class="coins__link-image" alt="Decentraland icon">
-              <span class="coins__link-abbr">MANA</span>
-              <span class="coins__link-name">Decentraland</span>
+              <p class="coins__link-abbr">MANA</p>
+              <p class="coins__link-name">Decentraland</p>
             </a>
           </li>
           <li class="coins__item">
             <a href="#" class="coins__link">
               <img src="./img/coins/ink.svg" class="coins__link-image" alt="Ink icon">
-              <span class="coins__link-abbr">INK</span>
-              <span class="coins__link-name">Ink</span>
+              <p class="coins__link-abbr">INK</p>
+              <p class="coins__link-name">Ink</p>
             </a>
           </li>
           <li class="coins__item">
             <a href="#" class="coins__link">
               <img src="./img/coins/bch.svg" class="coins__link-image" alt="Bitcoin Cash icon">
-              <span class="coins__link-abbr">BCH</span>
-              <span class="coins__link-name">Bitcoin Cash</span>
+              <p class="coins__link-abbr">BCH</p>
+              <p class="coins__link-name">Bitcoin Cash</p>
             </a>
           </li>
           <li class="coins__item">
             <a href="#" class="coins__link">
               <img src="./img/coins/sol.svg" class="coins__link-image" alt="Solana icon">
-              <span class="coins__link-abbr">SOL</span>
-              <span class="coins__link-name">Solana</span>
+              <p class="coins__link-abbr">SOL</p>
+              <p class="coins__link-name">Solana</p>
             </a>
           </li>
           <li class="coins__item">
             <a href="#" class="coins__link">
               <img src="./img/coins/act.svg" class="coins__link-image" alt="Achain icon">
-              <span class="coins__link-abbr">ACT</span>
-              <span class="coins__link-name">Achain</span>
+              <p class="coins__link-abbr">ACT</p>
+              <p class="coins__link-name">Achain</p>
             </a>
           </li>
           <li class="coins__item">
             <a href="#" class="coins__others">And many others</a>
           </li>
         </ul>
-        <a href="#" class="coins__btn btn">See all</a>
+        <div class="centered-btn">
+          <a href="#" class="btn btn--secondary">See all</a>
+        </div>
       </div>
     </section>
     <!-- === BLOG === -->
     <section class="blog">
       <div class="blog__container container">
         <div class="blog__header">
-          <h2 class="blog__header-title title title--2">Blog</h2>
-          <a href="#" class="btn">See all news</a>
+          <h2 class="blog__header-title title">Blog</h2>
+          <a href="#" class="btn btn--secondary">See all news</a>
         </div>
-        <ul class="blog-list list-reset">
+        <ul class="blog-list">
           <li class="blog-list__item">
             <a href="#" class="blog-list__link blog-card">
               <div class="blog-card__image">
                 <picture>
-                  <source srcset="./img/blog/blog-image-1.webp, ./img/blog/2x/blog-image-1-2x.webp 2x" type="type/webp">
-                  <img src="./img/blog/blog-image-1.jpeg" srcset="./img/blog/2x/blog-image-1-2x.jpeg 2x" alt="Blog card cover">
+                  <source srcset="./img/blog/blog-image-1.webp, ./img/blog/2x/blog-image-1@2x.webp 2x" type="image/webp">
+                  <img src="./img/blog/blog-image-1.jpeg" srcset="./img/blog/2x/blog-image-1@2x.jpeg 2x" alt="Blog card cover">
                 </picture>
               </div>
               <div class="blog-card__info">
-                <time class="blog-card__time item-bg" datetime="2021-10-12">12 Oct 2021</time>
-                <h3 class="blog-card__title title title--3">How Asset Tokenization Can Help Business Entrepreneurs</h3>
+                <time class="blog-card__time descr item-bg" datetime="2021-10-12">12 Oct 2021</time>
+                <h3 class="blog-card__title title title--md">How Asset Tokenization Can Help Business Entrepreneurs</h3>
                 <div class="blog-card__descr-inner item-bg">
                   <p class="blog-card__descr descr">
                     Digital currencies made a lot of buzz in the past 10 years. In addition to a vast amount of terminology (cryptocurrency, blockchain, validation, etc.), hundreds of coins have appeared. But despite the significant figures for market cap, the actual impact on the economy has not yet been felt.
@@ -256,13 +258,13 @@
               <div class="blog-author">
                 <div class="blog-author__image">
                   <picture>
-                    <source srcset="./img/blog/blog-author-1.webp, ./img/blog/2x/blog-author-1-2x.webp 2x" type="type/webp">
-                    <img src="./img/blog/blog-author-1.png" srcset="./img/blog/2x/blog-author-1-2x.png 2x" alt="Blog author">
+                    <source srcset="./img/blog/blog-author-1.webp, ./img/blog/2x/blog-author-1@2x.webp 2x" type="image/webp">
+                    <img src="./img/blog/blog-author-1.png" srcset="./img/blog/2x/blog-author-1@2x.png 2x" alt="Blog author">
                   </picture>
                 </div>
                 <div class="blog-author__info">
-                  <span class="blog-author__info-name">Daniel Frost</span>
-                  <span class="blog-author__info-position">Cryptocurrency expert</span>
+                  <p class="blog-author__info-name">Daniel Frost</p>
+                  <p class="blog-author__info-position">Cryptocurrency expert</p>
                 </div>
               </div>
             </a>
@@ -271,13 +273,13 @@
             <a href="#" class="blog-list__link blog-card">
               <div class="blog-card__image">
                 <picture>
-                  <source srcset="./img/blog/blog-image-1.webp, ./img/blog/2x/blog-image-1-2x.webp 2x" type="type/webp">
-                  <img src="./img/blog/blog-image-1.jpeg" srcset="./img/blog/2x/blog-image-1-2x.jpeg 2x" alt="Blog card cover">
+                  <source srcset="./img/blog/blog-image-1.webp, ./img/blog/2x/blog-image-1@2x.webp 2x" type="image/webp">
+                  <img src="./img/blog/blog-image-1.jpeg" srcset="./img/blog/2x/blog-image-1@2x.jpeg 2x" alt="Blog card cover">
                 </picture>
               </div>
               <div class="blog-card__info">
-                <time class="blog-card__time item-bg" datetime="2021-10-12">12 Oct 2021</time>
-                <h3 class="blog-card__title title title--3">How Asset Tokenization Can Help Business Entrepreneurs</h3>
+                <time class="blog-card__time descr item-bg" datetime="2021-10-12">12 Oct 2021</time>
+                <h3 class="blog-card__title title title--md">How Asset Tokenization Can Help Business Entrepreneurs</h3>
                 <div class="blog-card__descr-inner item-bg">
                   <p class="blog-card__descr descr">
                     Lacerat tristique orci ornare tortor diam. Vitae faucibus sed odio fringilla facilis...
@@ -287,13 +289,13 @@
               <div class="blog-author">
                 <div class="blog-author__image">
                   <picture>
-                    <source srcset="./img/blog/blog-author-1.webp, ./img/blog/2x/blog-author-1-2x.webp 2x" type="type/webp">
-                    <img src="./img/blog/blog-author-1.png" srcset="./img/blog/2x/blog-author-1-2x.png 2x" alt="Blog author">
+                    <source srcset="./img/blog/blog-author-1.webp, ./img/blog/2x/blog-author-1@2x.webp 2x" type="image/webp">
+                    <img src="./img/blog/blog-author-1.png" srcset="./img/blog/2x/blog-author-1@2x.png 2x" alt="Blog author">
                   </picture>
                 </div>
                 <div class="blog-author__info">
-                  <span class="blog-author__info-name">Daniel Frost</span>
-                  <span class="blog-author__info-position">Cryptocurrency expert</span>
+                  <p class="blog-author__info-name">Daniel Frost</p>
+                  <p class="blog-author__info-position">Cryptocurrency expert</p>
                 </div>
               </div>
             </a>
@@ -302,13 +304,13 @@
             <a href="#" class="blog-list__link blog-card">
               <div class="blog-card__image">
                 <picture>
-                  <source srcset="./img/blog/blog-image-2.webp, ./img/blog/2x/blog-image-2-2x.webp 2x" type="type/webp">
-                  <img src="./img/blog/blog-image-2.jpeg" srcset="./img/blog/2x/blog-image-2-2x.jpeg 2x" alt="Blog card cover">
+                  <source srcset="./img/blog/blog-image-2.webp, ./img/blog/2x/blog-image-2@2x.webp 2x" type="image/webp">
+                  <img src="./img/blog/blog-image-2.jpeg" srcset="./img/blog/2x/blog-image-2@2x.jpeg 2x" alt="Blog card cover">
                 </picture>
               </div>
               <div class="blog-card__info">
-                <time class="blog-card__time item-bg" datetime="2021-10-12">12 Oct 2021</time>
-                <h3 class="blog-card__title title title--3">How Asset Tokenization Can Help Business Entrepreneurs</h3>
+                <time class="blog-card__time descr item-bg" datetime="2021-10-12">12 Oct 2021</time>
+                <h3 class="blog-card__title title title--md">How Asset Tokenization Can Help Business Entrepreneurs</h3>
                 <div class="blog-card__descr-inner item-bg">
                   <p class="blog-card__descr descr">
                     Lacerat tristique orci ornare tortor diam. Vitae faucibus sed odio fringilla facilis...
@@ -318,13 +320,13 @@
               <div class="blog-author">
                 <div class="blog-author__image">
                   <picture>
-                    <source srcset="./img/blog/blog-author-2.webp, ./img/blog/2x/blog-author-2-2x.webp 2x" type="type/webp">
-                    <img src="./img/blog/blog-author-2.png" srcset="./img/blog/2x/blog-author-2-2x.png 2x" alt="Blog author">
+                    <source srcset="./img/blog/blog-author-2.webp, ./img/blog/2x/blog-author-2@2x.webp 2x" type="image/webp">
+                    <img src="./img/blog/blog-author-2.png" srcset="./img/blog/2x/blog-author-2@2x.png 2x" alt="Blog author">
                   </picture>
                 </div>
                 <div class="blog-author__info">
-                  <span class="blog-author__info-name">Mark Thompson</span>
-                  <span class="blog-author__info-position">Entrepreneur</span>
+                  <p class="blog-author__info-name">Mark Thompson</p>
+                  <p class="blog-author__info-position">Entrepreneur</p>
                 </div>
               </div>
             </a>
@@ -333,13 +335,13 @@
             <a href="#" class="blog-list__link blog-card">
               <div class="blog-card__image">
                 <picture>
-                  <source srcset="./img/blog/blog-image-3.webp, ./img/blog/2x/blog-image-3-2x.webp 2x" type="type/webp">
-                  <img src="./img/blog/blog-image-3.jpeg" srcset="./img/blog/2x/blog-image-3-2x.jpeg 2x" alt="Blog card cover">
+                  <source srcset="./img/blog/blog-image-3.webp, ./img/blog/2x/blog-image-3@2x.webp 2x" type="image/webp">
+                  <img src="./img/blog/blog-image-3.jpeg" srcset="./img/blog/2x/blog-image-3@2x.jpeg 2x" alt="Blog card cover">
                 </picture>
               </div>
               <div class="blog-card__info">
-                <time class="blog-card__time item-bg" datetime="2021-10-12">12 Oct 2021</time>
-                <h3 class="blog-card__title title title--3">How Asset Tokenization Can Help Business Entrepreneurs</h3>
+                <time class="blog-card__time descr item-bg" datetime="2021-10-12">12 Oct 2021</time>
+                <h3 class="blog-card__title title title--md">How Asset Tokenization Can Help Business Entrepreneurs</h3>
                 <div class="blog-card__descr-inner item-bg">
                   <p class="blog-card__descr descr">
                     Lacerat tristique orci ornare tortor diam. Vitae faucibus sed odio fringilla facilis...
@@ -349,37 +351,39 @@
               <div class="blog-author">
                 <div class="blog-author__image">
                   <picture>
-                    <source srcset="./img/blog/blog-author-1.webp, ./img/blog/2x/blog-author-1-2x.webp 2x" type="type/webp">
-                    <img src="./img/blog/blog-author-1.png" srcset="./img/blog/2x/blog-author-1-2x.png 2x" alt="Blog author">
+                    <source srcset="./img/blog/blog-author-1.webp, ./img/blog/2x/blog-author-1@2x.webp 2x" type="image/webp">
+                    <img src="./img/blog/blog-author-1.png" srcset="./img/blog/2x/blog-author-1@2x.png 2x" alt="Blog author">
                   </picture>
                 </div>
                 <div class="blog-author__info">
-                  <span class="blog-author__info-name">Daniel Frost</span>
-                  <span class="blog-author__info-position">Cryptocurrency expert</span>
+                  <p class="blog-author__info-name">Daniel Frost</p>
+                  <p class="blog-author__info-position">Cryptocurrency expert</p>
                 </div>
               </div>
             </a>
           </li>
         </ul>
-        <a href="#" class="blog__btn btn">See all news</a>
+        <div class="centered-btn">
+          <a href="#" class="btn btn--secondary">See all news</a>
+        </div>
       </div>
     </section>
     <!-- === LOCATION === -->
     <section class="location">
       <picture>
-        <source srcset="./img/location/location-bg.webp, ./img/location/2x/location-bg-2x.webp 2x" type="type/webp">
-        <img src="./img/location/location-bg.png" srcset="./img/location/2x/location-bg-2x.png 2x" class="location-bg" alt="Location map">
+        <source srcset="./img/location/location-bg.webp, ./img/location/2x/location-bg@2x.webp 2x" type="image/webp">
+        <img src="./img/location/location-bg.png" srcset="./img/location/2x/location-bg@2x.png 2x" class="location-bg" alt="Location map">
       </picture>
       <div class="location__container container">
-        <h2 class="location__title title title--2">Where are we?</h2>
-        <ul class="location-list list-reset">
+        <h2 class="location__title title">Where are we?</h2>
+        <ul class="location-list">
           <li class="location__item">
             <a href="#" class="location__item-link location__item-link--active">
               <div class="location__item-city">
                 <svg>
                   <use xlink:href="img/sprite.svg#location-map"></use>
                 </svg>
-                <span>Tallin</span>
+                <p>Tallin</p>
               </div>
               <address class="location__item-address">
                 Tallinn, Kesklinna linnaosa, Poordi tn 3-75, 10156, Estonia.
@@ -392,7 +396,7 @@
                 <svg>
                   <use xlink:href="img/sprite.svg#location-map"></use>
                 </svg>
-                <span>Kiev</span>
+                <p>Kiev</p>
               </div>
               <address class="location__item-address">
                 Kiev, Kesklinna linnaosa, Poordi tn 3-75, 10156, Ukraine.
@@ -405,7 +409,7 @@
                 <svg>
                   <use xlink:href="img/sprite.svg#location-map"></use>
                 </svg>
-                <span>Dubai</span>
+                <p>Dubai</p>
               </div>
               <address class="location__item-address">
                 Dubai, Kesklinna linnaosa, Poordi tn 3-75, 10156, UAE.
@@ -418,14 +422,14 @@
     <!-- === CONTACTS === -->
     <section class="contacts">
       <div class="contacts__container container">
-        <h2 class="contacts__title title title--2">Contact us</h2>
+        <h2 class="contacts__title title">Contact us</h2>
         <p class="contacts__descr descr">
           Use this form to reach out to us
         </p>
-        <ul class="contacts-list list-reset">
+        <ul class="contacts-list">
           <li class="contacts-list__item">
             <div class="contacts-list__image contacts-list__item-inner">
-              <ul class="contacts-social list-reset item-bg">
+              <ul class="contacts-social item-bg">
                 <li class="contacts-social__item">
                   <a href="#" class="contacts-social__link">
                     <svg>
@@ -442,22 +446,22 @@
                 </li>
               </ul>
               <picture>
-                <source srcset="./img/contacts/contacts-image-1.webp, ./img/contacts/2x/contacts-image-1-2x.webp 2x" type="type/webp">
-                <img src="./img/contacts/contacts-image-1.jpeg" srcset="./img/contacts/2x/contacts-image-1-2x.jpeg 2x" alt="Contacts person">
+                <source srcset="./img/contacts/contacts-image-1.webp, ./img/contacts/2x/contacts-image-1@2x.webp 2x" type="image/webp">
+                <img src="./img/contacts/contacts-image-1.jpeg" srcset="./img/contacts/2x/contacts-image-1@2x.jpeg 2x" alt="Contacts person">
               </picture>
             </div>
             <div class="contacts-list__person contacts-list__item-inner">
-              <span class="contacts-list__person-name">Ralph Edwards</span>
-              <span class="contacts-list__person-position descr">Community manager</span>
+              <p class="contacts-list__person-name">Ralph Edwards</p>
+              <p class="contacts-list__person-position descr">Community manager</p>
             </div>
           </li>
           <li class="contacts-list__item">
             <div class="contacts-list__image contacts-list__item-inner">
               <picture>
-                <source srcset="./img/contacts/contacts-image-2.webp, ./img/contacts/2x/contacts-image-2-2x.webp 2x" type="type/webp">
-                <img src="./img/contacts/contacts-image-2.jpeg" srcset="./img/contacts/2x/contacts-image-2-2x.jpeg 2x" alt="Contacts person">
+                <source srcset="./img/contacts/contacts-image-2.webp, ./img/contacts/2x/contacts-image-2@2x.webp 2x" type="image/webp">
+                <img src="./img/contacts/contacts-image-2.jpeg" srcset="./img/contacts/2x/contacts-image-2@2x.jpeg 2x" alt="Contacts person">
               </picture>
-              <ul class="contacts-social list-reset item-bg">
+              <ul class="contacts-social item-bg">
                 <li class="contacts-social__item">
                   <a href="#" class="contacts-social__link">
                     <svg>
@@ -475,68 +479,77 @@
               </ul>
             </div>
             <div class="contacts-list__person contacts-list__item-inner">
-              <span class="contacts-list__person-name">Arlene McCoy</span>
-              <span class="contacts-list__person-position descr">Community manager</span>
+              <p class="contacts-list__person-name">Arlene McCoy</p>
+              <p class="contacts-list__person-position descr">Community manager</p>
             </div>
           </li>
         </ul>
         <form class="contacts-form" action="#" method="post">
-          <label class="form-field">
-            <span class="form-field__caption">Email</span>
-            <input class="form-field__input" type="email" name="email" placeholder="nick@example.com" required>
-          </label>
-          <label class="form-field">
-            <span class="form-field__caption">Phone</span>
-            <input type="tel" class="form-field__input" name="telephone" placeholder="+44 (000) 000-0000" required>
-          </label>
-          <label class="form-field contacts-form__country">
-            <span class="form-field__caption">Country</span>
-            <select class="form-field__input" required>
-              <option value="" disabled hidden>Choose a country</option>
-              <option value="usa">USA</option>
-              <option value="kazakhstan">Қазақстан</option>
-              <option value="turkiey">Türkiye</option>
-              <option value="united_kingdom" selected>United Kingdom</option>
-            </select>
-          </label>
-          <fieldset class="custom-fieldset contacts-form__gender">
-            <legend class="custom-fieldset__name">Gender</legend>
-            <div class="custom-fieldset__wrapper">
-              <label class="custom-radio">
-                <input type="radio" name="form-radio" value="man" class="custom-radio__input visually-hidden" checked>
-                <span class="custom-radio__item"></span>
-                <span class="custom-radio__text">Man</span>
-              </label>
-              <label class="custom-radio">
-                <input type="radio" name="form-radio" value="woman" class="custom-radio__input visually-hidden">
-                <span class="custom-radio__item"></span>
-                <span class="custom-radio__text">Woman</span>
-              </label>
-            </div>
-          </fieldset>
-          <label class="form-field">
-            <span class="form-field__caption">Message</span>
-            <textarea class="form-field__input form-field__input--big" placeholder="Enter your message here" required></textarea>
-          </label>
-          <label class="contacts-form__checkbox custom-checkbox">
-            <input type="checkbox" name="form-accept" class="custom-checkbox__input visually-hidden">
-            <span class="custom-checkbox__item"></span>
-            <span class="custom-checkbox__text">
-              By clicking on the button, you consent to the processing <a href="#">of data processing</a> and compiled with <a href="#">confidentiality documents</a>
-            </span>
-          </label>
-          <button class="contacts-form__btn btn" type="submit">Send message</button>
+          <div class="contacts-form__items">
+            <label class="form-field">
+              <p class="form-field__caption">Email</p>
+              <input class="form-field__input" type="email" name="email" placeholder="nick@example.com" required>
+              <p class="form-field__alert">Error text</p>
+            </label>
+            <label class="form-field">
+              <p class="form-field__caption">Phone</p>
+              <input type="tel" class="form-field__input" name="telephone" placeholder="+44 (000) 000-0000" required>
+              <p class="form-field__alert">Error text</p>
+            </label>
+            <label class="form-field contacts-form__country">
+              <p class="form-field__caption">Country</p>
+              <select class="form-field__input" required>
+                <option value="" disabled hidden>Choose a country</option>
+                <option value="usa">USA</option>
+                <option value="kazakhstan">Қазақстан</option>
+                <option value="turkiey">Türkiye</option>
+                <option value="united_kingdom" selected>United Kingdom</option>
+              </select>
+            </label>
+            <fieldset class="custom-fieldset contacts-form__gender">
+              <legend class="custom-fieldset__name">Gender</legend>
+              <div class="custom-fieldset__wrapper">
+                <label class="custom-radio">
+                  <input type="radio" name="gender" value="man" class="custom-radio__input visually-hidden" checked>
+                  <span class="custom-radio__item"></span>
+                  <p class="custom-radio__text">Man</p>
+                </label>
+                <label class="custom-radio">
+                  <input type="radio" name="gender" value="woman" class="custom-radio__input visually-hidden">
+                  <span class="custom-radio__item"></span>
+                  <p class="custom-radio__text">Woman</p>
+                </label>
+              </div>
+            </fieldset>
+            <label class="form-field form-field--big">
+              <div class="form-field__header">
+                <p class="form-field__caption">Message</p>
+                <p class="form-field__score">0 / 140</p>
+              </div>
+              <textarea class="form-field__input" name="message" placeholder="Enter your message here" required></textarea>
+            </label>
+            <label class="contacts-form__checkbox custom-checkbox">
+              <input type="checkbox" name="form-accept" class="custom-checkbox__input visually-hidden">
+              <span class="custom-checkbox__item"></span>
+              <p class="custom-checkbox__text">
+                By clicking on the button, you consent to the processing <a href="#">of data processing</a> and compiled with <a href="#">confidentiality documents</a>
+              </p>
+            </label>
+          </div>
+          <div class="centered-btn">
+            <button class="btn btn--secondary" type="submit">Send message</button>
+          </div>
         </form>
       </div>
     </section>
     <!-- === QUESTION === -->
     <section class="question">
       <div class="question__container container">
-        <h2 class="question__title title title--2">Popular Questions</h2>
-        <ul class="accordion list-reset">
+        <h2 class="question__title title">Popular Questions</h2>
+        <ul class="accordion">
           <li class="accordion__item">
             <div class="accordion__header">
-              <h2 class="accordion__title accordion__title--1">Liquidity</h2>
+              <h2 class="accordion__title accordion__title--liquidity">Liquidity</h2>
               <span class="accordion__header-icon"></span>
             </div>
             <p class="accordion__descr descr">
@@ -545,7 +558,7 @@
           </li>
           <li class="accordion__item">
             <div class="accordion__header">
-              <h2 class="accordion__title accordion__title--2">Status migration</h2>
+              <h2 class="accordion__title accordion__title--status">Status migration</h2>
               <span class="accordion__header-icon"></span>
             </div>
             <p class="accordion__descr descr">
@@ -554,7 +567,7 @@
           </li>
           <li class="accordion__item">
             <div class="accordion__header">
-              <h2 class="accordion__title accordion__title--3">Team</h2>
+              <h2 class="accordion__title accordion__title--team">Team</h2>
               <span class="accordion__header-icon"></span>
             </div>
             <p class="accordion__descr descr">
@@ -563,7 +576,7 @@
           </li>
           <li class="accordion__item accordion__item--active">
             <div class="accordion__header">
-              <h2 class="accordion__title accordion__title--4">Roadmap</h2>
+              <h2 class="accordion__title accordion__title--roadmap">Roadmap</h2>
               <span class="accordion__header-icon"></span>
             </div>
             <p class="accordion__descr descr">
@@ -572,7 +585,7 @@
           </li>
           <li class="accordion__item">
             <div class="accordion__header">
-              <h2 class="accordion__title accordion__title--5">Legal</h2>
+              <h2 class="accordion__title accordion__title--legal">Legal</h2>
               <span class="accordion__header-icon"></span>
             </div>
             <p class="accordion__descr descr">
@@ -581,7 +594,7 @@
           </li>
           <li class="accordion__item">
             <div class="accordion__header">
-              <h2 class="accordion__title accordion__title--6">Security</h2>
+              <h2 class="accordion__title accordion__title--security">Security</h2>
               <span class="accordion__header-icon"></span>
             </div>
             <p class="accordion__descr descr">
@@ -596,12 +609,12 @@
       <div class="ads__container container">
         <div class="ads__content">
           <div class="ads__info">
-            <h2 class="ads__title title title--2">Buy cryptocurrency now!</h2>
+            <h2 class="ads__title title">Buy cryptocurrency now!</h2>
             <p class="ads__descr descr">
               Phasellus nam lacinia rhoncus id eget purus nulla er ultrices. Sapien dignissim dui, dignissim convalli nam lacinia er purus.
             </p>
           </div>
-          <a href="#" class="btn btn--white">Buy cryptocurrency</a>
+          <a href="#" class="ads__btn btn btn--white">Buy cryptocurrency</a>
         </div>
       </div>
     </section>
@@ -611,7 +624,7 @@
     <div class="footer-top container">
       <div class="footer-column footer-column--follow">
         <h2 class="footer-column__title">Follow Us</h2>
-        <ul class="footer-follow list-reset">
+        <ul class="footer-follow">
           <li class="footer-follow__item">
             <a href="#" class="footer-follow__link">
               <svg>
@@ -644,7 +657,7 @@
       </div>
       <nav class="footer-column footer-column--nav">
         <h2 class="footer-column__title">Menu</h2>
-        <ul class="footer-list list-reset">
+        <ul class="footer-list">
           <li class="footer-list__item">
             <a href="#" class="footer-list__link">Home</a>
           </li>
@@ -676,12 +689,12 @@
       <div class="footer-column footer-column--small">
         <div class="footer-column--small__image">
           <picture>
-            <source srcset="./img/footer/footer-author-1.webp, ./img/footer/2x/footer-author-1-2x.webp 2x" type="type/webp">
-            <img src="./img/footer/footer-author-1.jpeg" srcset="./img/footer/2x/footer-author-1-2x.jpeg 2x" alt="Site auhtor">
+            <source srcset="./img/footer/footer-author-1.webp, ./img/footer/2x/footer-author-1@2x.webp 2x" type="image/webp">
+            <img src="./img/footer/footer-author-1.jpeg" srcset="./img/footer/2x/footer-author-1@2x.jpeg 2x" alt="Site auhtor">
           </picture>
         </div>
         <h2 class="footer-column__title">Write to us</h2>
-        <ul class="footer-write list-reset">
+        <ul class="footer-write">
           <li class="footer-write__item">
             <a href="#" class="footer-write__link">
               <svg>
@@ -707,7 +720,7 @@
       </div>
       <div class="footer-column footer-column--contacts">
         <h2 class="footer-column__title visually-hidden">Our contacts</h2>
-        <ul class="footer-contacts list-reset">
+        <ul class="footer-contacts">
           <li class="footer-contacts__item">
             <a href="mailto:allison_carder_@mail.com" class="footer-contacts__link footer-contacts__link--mail">Allison_Carder_@mail.com</a>
           </li>
