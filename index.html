@@ -49,7 +49,7 @@
         <source srcset="./img/hero/hero-bg-2.webp, ./img/hero/2x/hero-bg-2@2x.webp 2x" type="image/webp" media="(max-width: 768px)">
         <source srcset="./img/hero/hero-bg-2.png, ./img/hero/2x/hero-bg-2@2x.png 2x" media="(max-width: 768px)">
         <source srcset="./img/hero/hero-bg-1.webp, ./img/hero/2x/hero-bg-1@2x.webp 2x" type="image/webp">
-        <img src="./img/hero/hero-bg-1.png" srcset="./img/hero/2x/hero-bg-1@2x.png 2x" alt="Hero cover">
+        <img src="./img/hero/hero-bg-1.png" srcset="./img/hero/2x/hero-bg-1@2x.png 2x" aria-hidden="true"  alt="Hero cover">
       </picture>
       <div class="hero__container container">
         <div class="hero__content">
@@ -372,7 +372,7 @@
     <section class="location">
       <picture>
         <source srcset="./img/location/location-bg.webp, ./img/location/2x/location-bg@2x.webp 2x" type="image/webp">
-        <img src="./img/location/location-bg.png" srcset="./img/location/2x/location-bg@2x.png 2x" class="location-bg" alt="Location map">
+        <img src="./img/location/location-bg.png" srcset="./img/location/2x/location-bg@2x.png 2x" class="location-bg" alt="Location map" aria-hidden="true">
       </picture>
       <div class="location__container container">
         <h2 class="location__title title">Where are we?</h2>
@@ -430,7 +430,7 @@
           <li class="contacts-list__item">
             <div class="contacts-list__image contacts-list__item-inner">
               <ul class="contacts-social item-bg">
-                <li class="contacts-social__item">
+                <li class="contacts-social__item" area-label="Telegram">
                   <a href="#" class="contacts-social__link">
                     <svg>
                       <use xlink:href="./img/sprite.svg#circle-telegram"></use>
@@ -438,7 +438,7 @@
                   </a>
                 </li>
                 <li class="contacts-social__item">
-                  <a href="#" class="contacts-social__link">
+                  <a href="#" class="contacts-social__link" area-label="Mail">
                     <svg>
                       <use xlink:href="./img/sprite.svg#circle-mail"></use>
                     </svg>
@@ -463,14 +463,14 @@
               </picture>
               <ul class="contacts-social item-bg">
                 <li class="contacts-social__item">
-                  <a href="#" class="contacts-social__link">
+                  <a href="#" class="contacts-social__link" area-label="Telegram">
                     <svg>
                       <use xlink:href="./img/sprite.svg#circle-telegram"></use>
                     </svg>
                   </a>
                 </li>
                 <li class="contacts-social__item">
-                  <a href="#" class="contacts-social__link">
+                  <a href="#" class="contacts-social__link" area-label="Mail">
                     <svg>
                       <use xlink:href="./img/sprite.svg#circle-mail"></use>
                     </svg>
@@ -626,28 +626,28 @@
         <h2 class="footer-column__title">Follow Us</h2>
         <ul class="footer-follow">
           <li class="footer-follow__item">
-            <a href="#" class="footer-follow__link">
+            <a href="#" class="footer-follow__link" area-label="Facebook">
               <svg>
                 <use xlink:href="./img/sprite.svg#facebook"></use>
               </svg>
             </a>
           </li>
           <li class="footer-follow__item">
-            <a href="#" class="footer-follow__link">
+            <a href="#" class="footer-follow__link" area-label="Twitter">
               <svg>
                 <use xlink:href="./img/sprite.svg#twitter"></use>
               </svg>
             </a>
           </li>
           <li class="footer-follow__item">
-            <a href="#" class="footer-follow__link">
+            <a href="#" class="footer-follow__link" area-label="Instagram">
               <svg>
                 <use xlink:href="./img/sprite.svg#instagram"></use>
               </svg>
             </a>
           </li>
           <li class="footer-follow__item">
-            <a href="#" class="footer-follow__link">
+            <a href="#" class="footer-follow__link" area-label="Youtube">
               <svg>
                 <use xlink:href="./img/sprite.svg#youtube"></use>
               </svg>
@@ -696,21 +696,21 @@
         <h2 class="footer-column__title">Write to us</h2>
         <ul class="footer-write">
           <li class="footer-write__item">
-            <a href="#" class="footer-write__link">
+            <a href="#" class="footer-write__link" area-label="Telegram">
               <svg>
                 <use xlink:href="./img/sprite.svg#circle-telegram"></use>
               </svg>
             </a>
           </li>
           <li class="footer-write__item">
-            <a href="#" class="footer-write__link">
+            <a href="#" class="footer-write__link" area-label="Mail">
               <svg>
                 <use xlink:href="./img/sprite.svg#circle-mail"></use>
               </svg>
             </a>
           </li>
           <li class="footer-write__item">
-            <a href="#" class="footer-write__link">
+            <a href="#" class="footer-write__link" area-label="Facebook">
               <svg>
                 <use xlink:href="./img/sprite.svg#circle-facebook"></use>
               </svg>
