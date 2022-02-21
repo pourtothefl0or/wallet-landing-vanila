@@ -498,7 +498,7 @@
             </label>
             <label class="form-field contacts-form__country">
               <p class="form-field__caption">Country</p>
-              <select class="form-field__input" required>
+              <select class="form-field__input form-field__input--dropdown" required>
                 <option value="" disabled hidden>Choose a country</option>
                 <option value="usa">USA</option>
                 <option value="kazakhstan">Қазақстан</option>
@@ -605,16 +605,20 @@
       </div>
     </section>
     <!-- === ADS === -->
-    <section class="ads">
-      <div class="ads__container container">
-        <div class="ads__content">
-          <div class="ads__info">
-            <h2 class="ads__title title">Buy cryptocurrency now!</h2>
-            <p class="ads__descr descr">
+    <section class="offer">
+      <div class="offer__container container">
+        <div class="offer__content">
+          <picture>
+            <source srcset="./img/offer/offer-bg-2.svg" media="(max-width: 767px)">
+            <img class="offer__content-image" src="./img/offer/offer-bg-1.svg" alt="Offer cover">
+          </picture>
+          <div class="offer__info">
+            <h2 class="offer__title title">Buy cryptocurrency now!</h2>
+            <p class="offer__descr descr">
               Phasellus nam lacinia rhoncus id eget purus nulla er ultrices. Sapien dignissim dui, dignissim convalli nam lacinia er purus.
             </p>
           </div>
-          <a href="#" class="ads__btn btn btn--white">Buy cryptocurrency</a>
+          <a href="#" class="offer__btn btn btn--white">Buy cryptocurrency</a>
         </div>
       </div>
     </section>
