@@ -287,8 +287,7 @@ xs
   grid-template-columns: repeat(2, 1fr);
   grid-template-areas:
     "caption score"
-    "input input"
-    "alert alert";
+    "input input";
   gap: 10px;
   margin: 0;
   width: 100%;
@@ -360,6 +359,13 @@ xs
   font-size: 14px;
   line-height: 17px;
   color: var(--color-mandy)
+}
+
+.form-field--error {
+  grid-template-areas:
+  "caption score"
+  "input input"
+  "alert alert";
 }
 
 .form-field--error .form-field__alert {
