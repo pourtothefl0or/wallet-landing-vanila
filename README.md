@@ -1,3 +1,3 @@
-# wallet-landing
+# wallet-landing-vanila
 
-  - [wallet-landing](https://github.com/pourtothefl0or/wallet-landing) - [ДЕМО](https://pourtothefl0or.github.io/wallet-landing/)
+  - [wallet-landing-vanila](https://github.com/pourtothefl0or/wallet-landing-vanila) - [ДЕМО](https://pourtothefl0or.github.io/wallet-landing-vanila/)
