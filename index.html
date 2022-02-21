@@ -430,15 +430,15 @@
           <li class="contacts-list__item">
             <div class="contacts-list__image contacts-list__item-inner">
               <ul class="contacts-social item-bg">
-                <li class="contacts-social__item" area-label="Telegram">
-                  <a href="#" class="contacts-social__link">
+                <li class="contacts-social__item">
+                  <a href="#" class="contacts-social__link" aria-label="Telegram">
                     <svg>
                       <use xlink:href="./img/sprite.svg#circle-telegram"></use>
                     </svg>
                   </a>
                 </li>
                 <li class="contacts-social__item">
-                  <a href="#" class="contacts-social__link" area-label="Mail">
+                  <a href="#" class="contacts-social__link" aria-label="Mail">
                     <svg>
                       <use xlink:href="./img/sprite.svg#circle-mail"></use>
                     </svg>
@@ -463,14 +463,14 @@
               </picture>
               <ul class="contacts-social item-bg">
                 <li class="contacts-social__item">
-                  <a href="#" class="contacts-social__link" area-label="Telegram">
+                  <a href="#" class="contacts-social__link" aria-label="Telegram">
                     <svg>
                       <use xlink:href="./img/sprite.svg#circle-telegram"></use>
                     </svg>
                   </a>
                 </li>
                 <li class="contacts-social__item">
-                  <a href="#" class="contacts-social__link" area-label="Mail">
+                  <a href="#" class="contacts-social__link" aria-label="Mail">
                     <svg>
                       <use xlink:href="./img/sprite.svg#circle-mail"></use>
                     </svg>
@@ -487,17 +487,17 @@
         <form class="contacts-form" action="#" method="post">
           <div class="contacts-form__items">
             <label class="form-field">
-              <p class="form-field__caption">Email</p>
+              <span class="form-field__caption">Email</span>
               <input class="form-field__input" type="email" name="email" placeholder="nick@example.com" required>
-              <p class="form-field__alert">Error text</p>
+              <span class="form-field__alert">Error text</span>
             </label>
             <label class="form-field">
-              <p class="form-field__caption">Phone</p>
+              <span class="form-field__caption">Phone</span>
               <input type="tel" class="form-field__input" name="telephone" placeholder="+44 (000) 000-0000" required>
-              <p class="form-field__alert">Error text</p>
+              <span class="form-field__alert">Error text</span>
             </label>
             <label class="form-field contacts-form__country">
-              <p class="form-field__caption">Country</p>
+              <span class="form-field__caption">Country</span>
               <select class="form-field__input form-field__input--dropdown" required>
                 <option value="" disabled hidden>Choose a country</option>
                 <option value="usa">USA</option>
@@ -512,28 +512,26 @@
                 <label class="custom-radio">
                   <input type="radio" name="gender" value="man" class="custom-radio__input visually-hidden" checked>
                   <span class="custom-radio__item"></span>
-                  <p class="custom-radio__text">Man</p>
+                  <span class="custom-radio__text">Man</span>
                 </label>
                 <label class="custom-radio">
                   <input type="radio" name="gender" value="woman" class="custom-radio__input visually-hidden">
                   <span class="custom-radio__item"></span>
-                  <p class="custom-radio__text">Woman</p>
+                  <span class="custom-radio__text">Woman</span>
                 </label>
               </div>
             </fieldset>
             <label class="form-field form-field--big">
-              <div class="form-field__header">
-                <p class="form-field__caption">Message</p>
-                <p class="form-field__score">0 / 140</p>
-              </div>
+              <span class="form-field__caption">Message</span>
+              <span class="form-field__score">0 / 140</span>
               <textarea class="form-field__input" name="message" placeholder="Enter your message here" required></textarea>
             </label>
             <label class="contacts-form__checkbox custom-checkbox">
               <input type="checkbox" name="form-accept" class="custom-checkbox__input visually-hidden">
               <span class="custom-checkbox__item"></span>
-              <p class="custom-checkbox__text">
+              <span class="custom-checkbox__text">
                 By clicking on the button, you consent to the processing <a href="#">of data processing</a> and compiled with <a href="#">confidentiality documents</a>
-              </p>
+              </span>
             </label>
           </div>
           <div class="centered-btn">
@@ -630,28 +628,28 @@
         <h2 class="footer-column__title">Follow Us</h2>
         <ul class="footer-follow">
           <li class="footer-follow__item">
-            <a href="#" class="footer-follow__link" area-label="Facebook">
+            <a href="#" class="footer-follow__link" aria-label="Facebook">
               <svg>
                 <use xlink:href="./img/sprite.svg#facebook"></use>
               </svg>
             </a>
           </li>
           <li class="footer-follow__item">
-            <a href="#" class="footer-follow__link" area-label="Twitter">
+            <a href="#" class="footer-follow__link" aria-label="Twitter">
               <svg>
                 <use xlink:href="./img/sprite.svg#twitter"></use>
               </svg>
             </a>
           </li>
           <li class="footer-follow__item">
-            <a href="#" class="footer-follow__link" area-label="Instagram">
+            <a href="#" class="footer-follow__link" aria-label="Instagram">
               <svg>
                 <use xlink:href="./img/sprite.svg#instagram"></use>
               </svg>
             </a>
           </li>
           <li class="footer-follow__item">
-            <a href="#" class="footer-follow__link" area-label="Youtube">
+            <a href="#" class="footer-follow__link" aria-label="Youtube">
               <svg>
                 <use xlink:href="./img/sprite.svg#youtube"></use>
               </svg>
@@ -700,21 +698,21 @@
         <h2 class="footer-column__title">Write to us</h2>
         <ul class="footer-write">
           <li class="footer-write__item">
-            <a href="#" class="footer-write__link" area-label="Telegram">
+            <a href="#" class="footer-write__link" aria-label="Telegram">
               <svg>
                 <use xlink:href="./img/sprite.svg#circle-telegram"></use>
               </svg>
             </a>
           </li>
           <li class="footer-write__item">
-            <a href="#" class="footer-write__link" area-label="Mail">
+            <a href="#" class="footer-write__link" aria-label="Mail">
               <svg>
                 <use xlink:href="./img/sprite.svg#circle-mail"></use>
               </svg>
             </a>
           </li>
           <li class="footer-write__item">
-            <a href="#" class="footer-write__link" area-label="Facebook">
+            <a href="#" class="footer-write__link" aria-label="Facebook">
               <svg>
                 <use xlink:href="./img/sprite.svg#circle-facebook"></use>
               </svg>
